@@ -8,6 +8,7 @@ class MegaverseObjectNotSupported(Exception):
 
     def __init__(self, object_name: str):
         super().__init__(f"Metaverse object {object_name} is currently not supported.")
+        self.object_name = object_name
 
 
 class MegaverseFactory:
